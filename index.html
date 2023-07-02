@@ -305,21 +305,20 @@
           <div class="order-form">
             <h3 class="order-title-form">Заявка на консультацію</h3>
             <form action="#">
+              <input class="order-input" type="text" placeholder="Ваше ім’я" />
               <input
-                class="order-input"
                 type="text"
-                placeholder="Ваше ім’я"
-              /><br />
-              <input
-                class="order-input"
-                type="text"
+                name="phone"
+                id="phone"
+                class="order-input tel"
                 placeholder="Ваш телефон"
-              /><br />
+                aria-label="телефон"
+              />
               <input
                 class="order-input"
                 type="text"
                 placeholder="Ваш сайт / бізнес"
-              /><br />
+              />
               <button class="button-hero order-btn" type="button">
                 Залишити заявку
               </button>
@@ -838,41 +837,42 @@
           Залишайте заявку та ми залюбки з Вами зв'яжемося
         </p>
         <form action="#" class="modal-form">
-          <div class="modal-fild">
-            <input
-              id="user-name"
-              type="text"
-              class="order-input name-input"
-              placeholder="Ваше ім'я"
-              aria-label="ім'я"
-            />
-          </div>
-          <div class="modal-fild">
-            <input
-              id="user-tel"
-              type="tel"
-              class="order-input tel"
-              placeholder="Ваш телефон"
-              aria-label="телефон"
-            />
-          </div>
-          <div class="modal-fild">
-            <input
-              id="user-email"
-              type="text"
-              class="order-input email"
-              placeholder="Ваш сайт/бізнес"
-              aria-label="text"
-            />
-          </div>
+          <input
+            id="user-name"
+            type="text"
+            class="order-input name-input"
+            placeholder="Ваше ім'я"
+            aria-label="ім'я"
+          />
+
+          <input
+            type="text"
+            name="phone"
+            id="phone2"
+            class="order-input tel"
+            placeholder="Ваш телефон"
+            aria-label="телефон"
+          />
+
+          <input
+            id="user-email"
+            type="text"
+            class="order-input email"
+            placeholder="Ваш сайт/бізнес"
+            aria-label="text"
+          />
+
           <button class="button-hero modal-button" type="submit">
             Залишити заявку
           </button>
         </form>
       </div>
     </div>
-
+    <!-- <script type="text/javascript" src="/js/jquery.inputmask.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/3.3.4/jquery.inputmask.bundle.min.js"></script> -->
     <script src="./js/modal.js" type="module"></script>
     <script src="./js/buttom.js" type="module"></script>
+    <script src="https://unpkg.com/imask"></script>
+    <script src="./js/valid.js" type="module"></script>
   </body>
 </html>
