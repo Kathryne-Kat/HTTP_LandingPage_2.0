@@ -357,6 +357,8 @@ address {
 
 .achievement-item {
   flex-basis: calc((100% - 90px) / 4);
+  text-align: center;
+  margin: 0 auto;
 }
 @media screen and (max-width: 768px) {
   .achievement-item {
@@ -369,17 +371,25 @@ address {
   }
 }
 .achievement-title {
+  display: inline;
+  margin: 0 auto;
   font-size: 50px;
   line-height: 1.3;
   text-align: center;
 }
-@media screen and (max-width: 768px) {
-  .achievement-title {
-    font-size: 30px;
-  }
-}
+
 .achievement-title-accent {
   color: var(--accent-text-color);
+  font-size: 50px;
+  line-height: 1.3;
+  text-align: center;
+  font-weight: 700;
+}
+@media screen and (max-width: 768px) {
+  .achievement-title,
+  .achievement-title-accent {
+    font-size: 30px;
+  }
 }
 .achievement-text {
   font-size: 18px;
