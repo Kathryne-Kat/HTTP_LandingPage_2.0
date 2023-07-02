@@ -127,7 +127,12 @@ address {
 
 @media screen and (max-width: 1200px) {
   .hero-img {
-    width: 400px;
+    width: 380px;
+  }
+}
+@media screen and (max-width: 840px) {
+  .hero-img {
+    width: 320px;
   }
 }
 @media screen and (max-width: 768px) {
